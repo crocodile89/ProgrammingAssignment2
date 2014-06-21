@@ -5,7 +5,7 @@
 ## if it hasn't been set it calcuates the new inverse and stores in "setinverse"
 
 ## The "makeCacheMatrix" function finds and sets the value of the matrix, and then sets and
-## gets the value of the inverse
+## gets the value of the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
         get <-function() x
         setinverse <- function(solve)m <<- solve
         getinverse <- function() m
-        list(set=set,get=get
+        list(set=set,get=get,
              setinverse=setinverse,
              getinverse=getinverse)
 }
